@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+	<title>My Awesome Login Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+    
+</head>
+<!--Coded with love by Mutiullah Samim-->
+<body>
+   
+    <form action="submit_form" method="POST">
+        {% csrf_token %}
+        <div class="container mt-5">
+            <div class="form-group col-6">
+                <label for="formGroupExampleInput">username</label>
+                <input type="text" name="username" class="form-control" id="formGroupExampleInput" placeholder="username">
+              </div>
+              <div class="form-group col-6">
+                <label for="formGroupExampleInput2">password</label>
+                <input type="text" name="password" class="form-control" id="formGroupExampleInput2" placeholder="password">
+              </div>
+              <button type="submit" class="btn btn-primary">submit</button>
+        </div>
+      </form>
+	
+</body>
+</html>
